@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<title>Animated Background | Javascript</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+<section class="sec"></section>
+<script>
+for (let i = 1; i <= 435; i++){
+let box = document.createElement('div');
+box.classList.add('box');
+document.querySelector('.sec').appendChild(box);
+}
+
+function animteBx(){
+let boxes = document.querySelectorAll('.box');
+let num = Math.floor(Math.random()*boxes.length);
+boxes[num].classList.toggle('animate')
+}
+setInterval(animteBx);
+</script>
+</body>
+</html>

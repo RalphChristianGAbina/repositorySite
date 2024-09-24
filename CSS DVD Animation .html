@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+body{
+position: relative;      
+  animation-name: background;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  }
+
+.div1{
+  position: relative;      
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+  
+.p2 {
+  font-family: "Arial", Sans-serif;
+  font-weight: bold;
+  color: transparent;
+  position: relative;      
+  animation-name: examples;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    }
+
+@keyframes background {
+  0%   {background:black;}
+   5%  {background:black;}
+  10%  {background:black;}
+  15%  {background:black;}
+  20%  {background:black;}
+  25%  {background:black;}
+  30%  {background:black;}
+  35%  {background:black;}
+  40%  {background:black;}
+  45%  {background:black;}
+  49%  {background:black;}
+  50%  {background:white;}
+  75%  {background:white;}
+  80%  {background:white;}
+  85%  {background:white;}
+  90%  {background:white;}
+  95%  {background:white;}
+  99%  {background:white;}
+  100% {background:black;}
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+    
+ 
+@keyframes examples {
+  0%   {background:red; -webkit-background-clip: text;}
+  25%  {background:yellow; -webkit-background-clip: text;}
+  50%  {background:blue; -webkit-background-clip: text;}
+  75%  {background:green; -webkit-background-clip: text;}
+  100% {background:red; -webkit-background-clip: text;}
+}
+
+@keyframes rotates {
+  0%   {background:red;}
+  25%  {background:yellow;}
+  50%  {background:blue;}
+  75%  {background:green;}
+  100% {background:red;}
+
+  100%{transform: rotate(1turn);}
+}
+
+.circle{
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  margin: 100px;
+  animation-name: rotates;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;   
+    }
+
+.div3{
+    height: 15px;
+  width: 5px;
+  position: absolute;
+  margin-left: 5px;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: rotate(14deg);
+    }
+ 
+.div4{
+   height: 15px;
+  width: 5px;
+  margin-left: 5px;
+  border-radius: 0px 0px 0px 0px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: rotate(346deg);
+    }
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>This example uses six of the animation properties:</p>
+
+<div class="div1">
+<p class="p2" style="margin: 0px 0px 0px 0px; font-size: 5em;">DVD</p>
+<div class="circle"style="margin: 0px 0px 0px 40px;">
+  <div class="div3"></div>
+  <div class="div4"></div>
+</div>
+<p class="p2" style="margin: -16px 0px 0px 60px; font-size: 15px;">VIDEO</p>
+<div class="circle" style="margin: -16px 0px 0px 110px;">
+  <div class="div3"></div>
+  <div class="div4"></div>
+</div>
+</div>
+
+</body>
+</html>
